@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Voting App</title>
+  </head>
+  <body>
+  <p>Vote Now!</p>
+  <form action="/vote" method="post">
+  	<div>
+  	  <label for="facts-button">Facts</label>
+  	  <input name="yourVote" id="facts-button" type="radio" value="facts" />
+  	</div>
+  	<div>
+  	  <label for="altfacts-button">Alt-Facts</label>
+  	  <input name="yourVote" id="altfacts-button" type="radio" values="altfacts" />
+  	</div>
+  	<input type="submit" name="submit" id="submit" value="Vote!" />
+  </form>
+  <ul>
+    <li>Facts: <%= votes.facts %></li>
+    <li>Alt-Facts: <%= votes.altfacts %></li>
+  </ul>
+  </body>
+ </html>
